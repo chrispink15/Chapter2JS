@@ -4,7 +4,10 @@ var name = 'Molly';
 var message = ', please check your order: ';
 
 // Concatenate the three variables above to create the welcome message
-var sign = "Montague House";
+var welcome = greeting + name + message;
+
+// Create variables to hold details about the sign
+var sign = 'Montague House';
 var tiles = sign.length;
 var subTotal = tiles * 5;
 var shipping = 7;
@@ -17,7 +20,7 @@ el.textContent = welcome;
 
 // Get the element that has an id of userSign then update its contents
 var elSign = document.getElementById('userSign');
-elSign.textContent = tiles;
+elSign.textContent = sign;
 
 // Get the element that has an id of tiles then update its contents
 var elTiles = document.getElementById('tiles');
